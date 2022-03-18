@@ -1,4 +1,4 @@
-# sicredi-teste
+# Sicredi Teste QA
 
 ## Requisitos
 Para a execução do projeto é necessário possuir:
