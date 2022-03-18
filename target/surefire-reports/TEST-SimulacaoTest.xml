@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="SimulacaoTest" time="0.595" tests="14" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi\target\test-classes;C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi\target\classes;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2\jackson-databind-2.13.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="GMT-03:00"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Amazon Corretto\jdk11.0.14_10\bin"/>
+    <property name="sun.java.command" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\surefire8603720076757561330\surefirebooter9000678775320906719.jar C:\Users\lidiane.padilha\AppData\Local\Temp\surefire8603720076757561330 2022-03-17T19-01-01_373-jvmRun1 surefire18154973418444733303tmp surefire_08860753919190455320tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi\target\test-classes;C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi\target\classes;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2\jackson-databind-2.13.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lidiane.padilha"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-02-08"/>
+    <property name="java.home" value="C:\Program Files (x86)\Amazon Corretto\jdk11.0.14_10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\surefire8603720076757561330\surefirebooter9000678775320906719.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14.1+10-LTS"/>
+    <property name="user.name" value="lidiane.padilha"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.14.10.1"/>
+    <property name="localRepository" value="C:\Users\lidiane.padilha\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.14.1"/>
+    <property name="user.dir" value="C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Amazon Corretto\jdk11.0.14_10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Amazon Corretto\jdk11.0.14_10\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\apache-maven-3.8.1\bin;C:\Program Files\Git\cmd;C:\Users\lidiane.padilha\AppData\Local\Microsoft\WindowsApps;;C:\Users\lidiane.padilha\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, emulated-client"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.14.1+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="naoDeveInserirSimulacaoSemSeguro" classname="SimulacaoTest" time="0.28"/>
+  <testcase name="deveInserirSimulacaoStatus400" classname="SimulacaoTest" time="0.023"/>
+  <testcase name="deveInserirSimulacaoStatus409" classname="SimulacaoTest" time="0.028"/>
+  <testcase name="deveRetornarSimulacoesStatus200" classname="SimulacaoTest" time="0.04"/>
+  <testcase name="deveInserirSimulacaotatus201" classname="SimulacaoTest" time="0.025"/>
+  <testcase name="naoDeveInserirSimulacaoSemParcelas" classname="SimulacaoTest" time="0.034">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;parcelas&quot;:&quot;Parcelas nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;parcelas&quot;:&quot;Parcelas não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"parcelas":"Parcelas nÃ£o pode ser vazio"}}> but was: <{"erros":{"parcelas":"Parcelas não pode ser vazio"}}>
+	at SimulacaoTest.naoDeveInserirSimulacaoSemParcelas(SimulacaoTest.java:267)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoSemNome" classname="SimulacaoTest" time="0.024">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;nome&quot;:&quot;Nome nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;nome&quot;:&quot;Nome não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"nome":"Nome nÃ£o pode ser vazio"}}> but was: <{"erros":{"nome":"Nome não pode ser vazio"}}>
+	at SimulacaoTest.naoDeveInserirSimulacaoSemNome(SimulacaoTest.java:177)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoValorMenorQue1000" classname="SimulacaoTest" time="0.023"/>
+  <testcase name="naoDeveInserirSimulacaoParcelaMaiorQue48" classname="SimulacaoTest" time="0.021"/>
+  <testcase name="naoDeveInserirSimulacaoParcelaMenorQue2" classname="SimulacaoTest" time="0.015"/>
+  <testcase name="naoDeveInserirSimulacaoSemEmail" classname="SimulacaoTest" time="0.02">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;email&quot;:&quot;E-mail nÃ£o deve ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;email&quot;:&quot;E-mail não deve ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"email":"E-mail nÃ£o deve ser vazio"}}> but was: <{"erros":{"email":"E-mail não deve ser vazio"}}>
+	at SimulacaoTest.naoDeveInserirSimulacaoSemEmail(SimulacaoTest.java:207)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoSemValor" classname="SimulacaoTest" time="0.018">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;valor&quot;:&quot;Valor nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;valor&quot;:&quot;Valor não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"valor":"Valor nÃ£o pode ser vazio"}}> but was: <{"erros":{"valor":"Valor não pode ser vazio"}}>
+	at SimulacaoTest.naoDeveInserirSimulacaoSemValor(SimulacaoTest.java:237)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoValorMaiorQue40000" classname="SimulacaoTest" time="0.018"/>
+  <testcase name="naoDeveInserirSimulacaoSemCpf" classname="SimulacaoTest" time="0.018">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;cpf&quot;:&quot;CPF nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;cpf&quot;:&quot;CPF não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"cpf":"CPF nÃ£o pode ser vazio"}}> but was: <{"erros":{"cpf":"CPF não pode ser vazio"}}>
+	at SimulacaoTest.naoDeveInserirSimulacaoSemCpf(SimulacaoTest.java:147)
+]]></failure>
+  </testcase>
+</testsuite>
