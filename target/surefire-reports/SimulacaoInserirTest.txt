@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: SimulacaoInserirTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 0.332 s <<< FAILURE! - in SimulacaoInserirTest
+naoDeveInserirSimulacaoSemSeguro  Time elapsed: 0.033 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <500> but was: <400>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemSeguro(SimulacaoInserirTest.java:275)
+
+deveInserirSimulacaoStatus400  Time elapsed: 0.031 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"parcelas":"Parcelas nÃ£o pode ser vazio","valor":"Valor nÃ£o pode ser vazio"}}> but was: <{"erros":{"parcelas":"Parcelas não pode ser vazio","valor":"Valor não pode ser vazio"}}>
+	at SimulacaoInserirTest.deveInserirSimulacaoStatus400(SimulacaoInserirTest.java:71)
+
+deveInserirSimulacaoStatus409  Time elapsed: 0.026 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <409> but was: <400>
+	at SimulacaoInserirTest.deveInserirSimulacaoStatus409(SimulacaoInserirTest.java:100)
+
+deveInserirSimulacaotatus201  Time elapsed: 0.025 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <400>
+	at SimulacaoInserirTest.deveInserirSimulacaotatus201(SimulacaoInserirTest.java:43)
+
+naoDeveInserirSimulacaoSemParcelas  Time elapsed: 0.019 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"parcelas":"Parcelas nÃ£o pode ser vazio"}}> but was: <{"erros":{"parcelas":"Parcelas não pode ser vazio"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemParcelas(SimulacaoInserirTest.java:246)
+
+naoDeveInserirSimulacaoSemNome  Time elapsed: 0.022 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"nome":"Nome nÃ£o pode ser vazio"}}> but was: <{"erros":{"nome":"Nome não pode ser vazio"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemNome(SimulacaoInserirTest.java:159)
+
+naoDeveInserirSimulacaoParcelaMaiorQue48  Time elapsed: 0.024 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <400> but was: <201>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoParcelaMaiorQue48(SimulacaoInserirTest.java:395)
+
+naoDeveInserirSimulacaoSemEmail  Time elapsed: 0.018 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"email":"E-mail nÃ£o deve ser vazio"}}> but was: <{"erros":{"email":"E-mail não deve ser vazio"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemEmail(SimulacaoInserirTest.java:188)
+
+naoDeveInserirSimulacaoSemValor  Time elapsed: 0.019 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"valor":"Valor nÃ£o pode ser vazio"}}> but was: <{"erros":{"valor":"Valor não pode ser vazio"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemValor(SimulacaoInserirTest.java:217)
+
+naoDeveInserirSimulacaoSemCpf  Time elapsed: 0.022 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"cpf":"CPF nÃ£o pode ser vazio"}}> but was: <{"erros":{"cpf":"CPF não pode ser vazio"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemCpf(SimulacaoInserirTest.java:130)
+
+naoDeveInserirSimulacaoComEmailInvalido  Time elapsed: 0.022 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"erros":{"email":"E-mail deve ser um e-mail vÃ¡lido"}}> but was: <{"erros":{"email":"E-mail deve ser um e-mail válido"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoComEmailInvalido(SimulacaoInserirTest.java:425)
+

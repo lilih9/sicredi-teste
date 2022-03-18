@@ -18,11 +18,11 @@ public class SimulacaoAtualizarTest {
     @Test
     void deveAtualizarSimulacaoComCpf() throws URISyntaxException, IOException, InterruptedException {
 
-        var url = URL.concat("62648716050");
+        var url = URL.concat("66414919004");
 
         var simulacao = new SimulacaoPOJO();
         simulacao.setNome("Lidiane Teste");
-        simulacao.setCpf("62648716050");
+        simulacao.setCpf("66414919004");
         simulacao.setEmail("teste1@teste.com");
         simulacao.setParcelas(5);
         simulacao.setSeguro(Boolean.FALSE);
@@ -55,7 +55,7 @@ public class SimulacaoAtualizarTest {
     @Test
     void deveAtualizarSimulacaoCampoValor() throws URISyntaxException, IOException, InterruptedException {
 
-        var url = URL.concat("62648716050");
+        var url = URL.concat("66414919004");
 
         var simulacao = new SimulacaoPOJO();
         simulacao.setValor(new BigDecimal(544554));

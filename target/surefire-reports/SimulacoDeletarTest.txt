@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: SimulacoDeletarTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in SimulacoDeletarTest
+deveDeletarSimulacaoComId  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <204> but was: <200>
+	at SimulacoDeletarTest.deveDeletarSimulacaoComId(SimulacoDeletarTest.java:31)
+
+naoDeveDeletarSimulacaoComId  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <404> but was: <200>
+	at SimulacoDeletarTest.naoDeveDeletarSimulacaoComId(SimulacoDeletarTest.java:49)
+

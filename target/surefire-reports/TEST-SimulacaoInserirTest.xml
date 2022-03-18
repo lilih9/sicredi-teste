@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="SimulacaoTest" time="0.595" tests="14" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="SimulacaoInserirTest" time="0.332" tests="14" errors="0" skipped="0" failures="11">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Amazon Corretto\jdk11.0.14_10\bin"/>
-    <property name="sun.java.command" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\surefire8603720076757561330\surefirebooter9000678775320906719.jar C:\Users\lidiane.padilha\AppData\Local\Temp\surefire8603720076757561330 2022-03-17T19-01-01_373-jvmRun1 surefire18154973418444733303tmp surefire_08860753919190455320tmp"/>
+    <property name="sun.java.command" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\surefire1367927353547213250\surefirebooter16186472362336254262.jar C:\Users\lidiane.padilha\AppData\Local\Temp\surefire1367927353547213250 2022-03-18T16-52-24_397-jvmRun1 surefire3980096586876727315tmp surefire_0708482798696549414tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi\target\test-classes;C:\Users\lidiane.padilha\OneDrive - META SERVIÇOS EM INFORMÁTICA LTDA\Área de Trabalho\TesteQASicredi\target\classes;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2\jackson-databind-2.13.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\lidiane.padilha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\surefire8603720076757561330\surefirebooter9000678775320906719.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LIDIAN~1.PAD\AppData\Local\Temp\surefire1367927353547213250\surefirebooter16186472362336254262.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.14.1+10-LTS"/>
@@ -59,38 +59,62 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="naoDeveInserirSimulacaoSemSeguro" classname="SimulacaoTest" time="0.28"/>
-  <testcase name="deveInserirSimulacaoStatus400" classname="SimulacaoTest" time="0.023"/>
-  <testcase name="deveInserirSimulacaoStatus409" classname="SimulacaoTest" time="0.028"/>
-  <testcase name="deveRetornarSimulacoesStatus200" classname="SimulacaoTest" time="0.04"/>
-  <testcase name="deveInserirSimulacaotatus201" classname="SimulacaoTest" time="0.025"/>
-  <testcase name="naoDeveInserirSimulacaoSemParcelas" classname="SimulacaoTest" time="0.034">
+  <testcase name="naoDeveInserirSimulacaoSemSeguro" classname="SimulacaoInserirTest" time="0.033">
+    <failure message="expected: &lt;500&gt; but was: &lt;400&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <500> but was: <400>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemSeguro(SimulacaoInserirTest.java:275)
+]]></failure>
+  </testcase>
+  <testcase name="deveInserirSimulacaoStatus400" classname="SimulacaoInserirTest" time="0.031">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;parcelas&quot;:&quot;Parcelas nÃ£o pode ser vazio&quot;,&quot;valor&quot;:&quot;Valor nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;parcelas&quot;:&quot;Parcelas não pode ser vazio&quot;,&quot;valor&quot;:&quot;Valor não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"parcelas":"Parcelas nÃ£o pode ser vazio","valor":"Valor nÃ£o pode ser vazio"}}> but was: <{"erros":{"parcelas":"Parcelas não pode ser vazio","valor":"Valor não pode ser vazio"}}>
+	at SimulacaoInserirTest.deveInserirSimulacaoStatus400(SimulacaoInserirTest.java:71)
+]]></failure>
+  </testcase>
+  <testcase name="deveInserirSimulacaoStatus409" classname="SimulacaoInserirTest" time="0.026">
+    <failure message="expected: &lt;409&gt; but was: &lt;400&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <409> but was: <400>
+	at SimulacaoInserirTest.deveInserirSimulacaoStatus409(SimulacaoInserirTest.java:100)
+]]></failure>
+  </testcase>
+  <testcase name="deveInserirSimulacaotatus201" classname="SimulacaoInserirTest" time="0.025">
+    <failure message="expected: &lt;201&gt; but was: &lt;400&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <400>
+	at SimulacaoInserirTest.deveInserirSimulacaotatus201(SimulacaoInserirTest.java:43)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoSemParcelas" classname="SimulacaoInserirTest" time="0.019">
     <failure message="expected: &lt;{&quot;erros&quot;:{&quot;parcelas&quot;:&quot;Parcelas nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;parcelas&quot;:&quot;Parcelas não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"parcelas":"Parcelas nÃ£o pode ser vazio"}}> but was: <{"erros":{"parcelas":"Parcelas não pode ser vazio"}}>
-	at SimulacaoTest.naoDeveInserirSimulacaoSemParcelas(SimulacaoTest.java:267)
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemParcelas(SimulacaoInserirTest.java:246)
 ]]></failure>
   </testcase>
-  <testcase name="naoDeveInserirSimulacaoSemNome" classname="SimulacaoTest" time="0.024">
+  <testcase name="naoDeveInserirSimulacaoSemNome" classname="SimulacaoInserirTest" time="0.022">
     <failure message="expected: &lt;{&quot;erros&quot;:{&quot;nome&quot;:&quot;Nome nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;nome&quot;:&quot;Nome não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"nome":"Nome nÃ£o pode ser vazio"}}> but was: <{"erros":{"nome":"Nome não pode ser vazio"}}>
-	at SimulacaoTest.naoDeveInserirSimulacaoSemNome(SimulacaoTest.java:177)
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemNome(SimulacaoInserirTest.java:159)
 ]]></failure>
   </testcase>
-  <testcase name="naoDeveInserirSimulacaoValorMenorQue1000" classname="SimulacaoTest" time="0.023"/>
-  <testcase name="naoDeveInserirSimulacaoParcelaMaiorQue48" classname="SimulacaoTest" time="0.021"/>
-  <testcase name="naoDeveInserirSimulacaoParcelaMenorQue2" classname="SimulacaoTest" time="0.015"/>
-  <testcase name="naoDeveInserirSimulacaoSemEmail" classname="SimulacaoTest" time="0.02">
+  <testcase name="naoDeveInserirSimulacaoValorMenorQue1000" classname="SimulacaoInserirTest" time="0.026"/>
+  <testcase name="naoDeveInserirSimulacaoParcelaMaiorQue48" classname="SimulacaoInserirTest" time="0.024">
+    <failure message="expected: &lt;400&gt; but was: &lt;201&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400> but was: <201>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoParcelaMaiorQue48(SimulacaoInserirTest.java:395)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoParcelaMenorQue2" classname="SimulacaoInserirTest" time="0.017"/>
+  <testcase name="naoDeveInserirSimulacaoSemEmail" classname="SimulacaoInserirTest" time="0.018">
     <failure message="expected: &lt;{&quot;erros&quot;:{&quot;email&quot;:&quot;E-mail nÃ£o deve ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;email&quot;:&quot;E-mail não deve ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"email":"E-mail nÃ£o deve ser vazio"}}> but was: <{"erros":{"email":"E-mail não deve ser vazio"}}>
-	at SimulacaoTest.naoDeveInserirSimulacaoSemEmail(SimulacaoTest.java:207)
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemEmail(SimulacaoInserirTest.java:188)
 ]]></failure>
   </testcase>
-  <testcase name="naoDeveInserirSimulacaoSemValor" classname="SimulacaoTest" time="0.018">
+  <testcase name="naoDeveInserirSimulacaoSemValor" classname="SimulacaoInserirTest" time="0.019">
     <failure message="expected: &lt;{&quot;erros&quot;:{&quot;valor&quot;:&quot;Valor nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;valor&quot;:&quot;Valor não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"valor":"Valor nÃ£o pode ser vazio"}}> but was: <{"erros":{"valor":"Valor não pode ser vazio"}}>
-	at SimulacaoTest.naoDeveInserirSimulacaoSemValor(SimulacaoTest.java:237)
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemValor(SimulacaoInserirTest.java:217)
 ]]></failure>
   </testcase>
-  <testcase name="naoDeveInserirSimulacaoValorMaiorQue40000" classname="SimulacaoTest" time="0.018"/>
-  <testcase name="naoDeveInserirSimulacaoSemCpf" classname="SimulacaoTest" time="0.018">
+  <testcase name="naoDeveInserirSimulacaoValorMaiorQue40000" classname="SimulacaoInserirTest" time="0.023"/>
+  <testcase name="naoDeveInserirSimulacaoSemCpf" classname="SimulacaoInserirTest" time="0.022">
     <failure message="expected: &lt;{&quot;erros&quot;:{&quot;cpf&quot;:&quot;CPF nÃ£o pode ser vazio&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;cpf&quot;:&quot;CPF não pode ser vazio&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"cpf":"CPF nÃ£o pode ser vazio"}}> but was: <{"erros":{"cpf":"CPF não pode ser vazio"}}>
-	at SimulacaoTest.naoDeveInserirSimulacaoSemCpf(SimulacaoTest.java:147)
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoSemCpf(SimulacaoInserirTest.java:130)
+]]></failure>
+  </testcase>
+  <testcase name="naoDeveInserirSimulacaoComEmailInvalido" classname="SimulacaoInserirTest" time="0.022">
+    <failure message="expected: &lt;{&quot;erros&quot;:{&quot;email&quot;:&quot;E-mail deve ser um e-mail vÃ¡lido&quot;}}&gt; but was: &lt;{&quot;erros&quot;:{&quot;email&quot;:&quot;E-mail deve ser um e-mail válido&quot;}}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"erros":{"email":"E-mail deve ser um e-mail vÃ¡lido"}}> but was: <{"erros":{"email":"E-mail deve ser um e-mail válido"}}>
+	at SimulacaoInserirTest.naoDeveInserirSimulacaoComEmailInvalido(SimulacaoInserirTest.java:425)
 ]]></failure>
   </testcase>
 </testsuite>

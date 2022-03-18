@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: SimulacaoAtualizarTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.505 s <<< FAILURE! - in SimulacaoAtualizarTest
+deveAtualizarSimulacaoSemCpf  Time elapsed: 0.029 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"mensagem":"CPF 555555555555 nÃ£o encontrado"}> but was: <{"mensagem":"CPF 555555555555 não encontrado"}>
+	at SimulacaoAtualizarTest.deveAtualizarSimulacaoSemCpf(SimulacaoAtualizarTest.java:107)
+
+deveAtualizarSimulacaoCampoValor  Time elapsed: 0.031 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <544554> but was: <11000.00>
+	at SimulacaoAtualizarTest.deveAtualizarSimulacaoCampoValor(SimulacaoAtualizarTest.java:80)
+

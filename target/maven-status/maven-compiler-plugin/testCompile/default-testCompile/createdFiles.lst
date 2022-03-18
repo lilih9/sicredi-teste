@@ -1,2 +1,5 @@
-SimulacaoTest.class
-RestricaoTest.class
+SimulacaoInserirTest.class
+SimulacoDeletarTest.class
+RestricaoConsultarTest.class
+SimulacaoAtualizarTest.class
+SimulacaoConsultarTest.class

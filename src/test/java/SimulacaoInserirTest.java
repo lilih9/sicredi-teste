@@ -58,7 +58,7 @@ public class SimulacaoInserirTest {
 
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .uri(new URI(URL))
-                .header("Content-Type", "application/json")
+                .header("Content-Type", "application/json; charset=UTF-8")
                 .POST(HttpRequest.BodyPublishers.ofString(requestBody))
                 .build();
 
